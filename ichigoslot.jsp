@@ -26,7 +26,7 @@ String address = request.getParameter("address");
 
 <%
 System.out.println(address);
-String param="symbol-cli transaction transfer --recipient-address " + address + " --mosaics 3A8416DB2D53B6C8::15000000 --message ProcessExe --max-fee 2000000 --profile alice --password TestXym2000 --mode normal --announce > result.txt";
+String param="symbol-cli transaction transfer --recipient-address " + address + " --mosaics 3A8416DB2D53B6C8::15000000 --message ProcessExe --max-fee 2000000 --profile alice --password YourPassowrd --mode normal --announce > result.txt";
 System.out.println(param);
 ProcessBuilder p = new ProcessBuilder("cmd", "/c" , param); 
 %>
